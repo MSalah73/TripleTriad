@@ -4,9 +4,6 @@ body, html{
 	margin: 0;
 }
 aside{
-/*	display: grid;
-justify-items: center;
-align-items: center;*/
 	margin: 10% 5%;
 }
 body{
@@ -35,9 +32,7 @@ img{
 	display: inline-grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	/*grid-gap: 3px;*/
-/*	justify-content: center;
-*/	display: grid;
+	display: grid;
 	justify-items: center;
 	align-items: center;
 	margin: 3.7vh 6.2vw;
@@ -67,13 +62,15 @@ img{
 .CPU{
 	background-color: red;
 }
-/*@media only screen and (min-width: 1000px) {
-  body {
-    height: 1000px;
-    width: 1200px;
-  }
-}*/
-
+.landingPage{
+	width: 55%;
+	height: 54%;
+}
+button{
+	margin-top: 200px;
+	height: 100px;
+	width: 200px;
+}
 /* The Modal (background) */
 .modal {
   position: fixed; /* Stay in place */

@@ -96,7 +96,9 @@ if(!turn && !isRPSGameDone){
 		CPUTurn();
 	}, 1000)
 }
-
+function startGame(event){
+	event.target.parentNode.parentNode.remove();
+}
 function populatePlayersHand(cards){
 	let hand = []; 
 	$loadingModal.remove();
