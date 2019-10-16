@@ -7,6 +7,9 @@ An attempted to make a simplified version of the card game from final fantasy 8.
 Triple Triad is a dumbed down verison of a card game from the era of PlayStation 1. You can play and reminisce good/fun olden days of your childhood. 
 A description of your project. Explain what is the project about and what is the use for it.
 
+## How to Play
+* Each card have 4 values. Each values dectate
+
 ### Technical Used
 ```
 HTML
@@ -17,32 +20,33 @@ JavaScript and DOM manipulation via JavaScript
 ### Wireframes
 
 Something similar to this:
-![alt text](https://i.ytimg.com/vi/FdxfpCZf3-8/hqdefault.jpg)
+![alt game design](https://i.ytimg.com/vi/FdxfpCZf3-8/hqdefault.jpg)
 
 ### User Stories
 
-The user can play to reminisce themselves with Triple Triad from a final fantasy 8.
-The user can place a card on their turn.
-The user can place a card to attack CPU cards.
+* The user can play to reminisce themselves with Triple Triad from a final fantasy 8.
+* The user can place a card on their turn.
+* The user can place a card to attack CPU cards.
 
 ---
 
 ## Planning and Development Process
 
-Build the visuals.
-Build a drag and drop feature.
-Fetch cards from API.
-Build game mechanics.
-Build a simple AI.
+* Build the visuals.
+* Build a drag and drop feature.
+* Fetch cards from API.
+* Build game mechanics.
+* Build a simple AI.
 
 ### Problem-Solving Strategy
 
-console.log() values and debug using the browser debugger.
+* console.log()
+* Debug using the browser debugger.
 
 ### Unsolved problems
 
-Timing problem between each turn.
-Fetch takes a long time to get the resources.
+* Timing problem between each turn.
+* Fetch takes a long time to get the resources.
 
 ---
 
@@ -58,5 +62,5 @@ Fetch takes a long time to get the resources.
 ---
 
  ## References
- API page can be accessed [here]("https://triad.raelys.com/).
- 
+ * API page can be accessed [here]("https://triad.raelys.com/).
+ * Google

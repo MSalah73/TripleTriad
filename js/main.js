@@ -5,7 +5,8 @@ getCards().then((cards) => {
 	playerHand = populatePlayersHand(cards);
 	deck = cards;
 	if(turn){
-		CPUTurn();
+		setTimeout(()=>{		CPUTurn();
+}, 1000)
 	}
 })
 let CPUHand = populateCPUHand();
@@ -165,13 +166,26 @@ function attckingLogic(placedCard, surroundingCardIndex, attackingPosition, defe
 	if(surroundingCardIndex === -1 || !defenderCard.firstChild || defenderCard.firstChild.classList[0] === placedCard.firstChild.classList[0]){
 		return;
 	}
+	console.log("attacking at", surroundingCardIndex, defenderCard)
+
 
 	if(!turn){
-		attactingValueAtPosition = deck[playerHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition]
-		defendingValueAtPosition = deck[(CPUHand[Number(defenderCard.firstChild.id[1])-1]).toString()].stats.numeric[defendingPosition];
+		attactingValueAtPosition = deck[playerHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition];
+		if(defenderCard.firstChild.id[0] === "c"){
+			defendingValueAtPosition = deck[CPUHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+		}else{
+			defendingValueAtPosition = deck[playerHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+		}
+
 	}else{
-		attactingValueAtPosition = deck[CPUHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition]
-		defendingValueAtPosition = deck[(playerHand[Number(defenderCard.firstChild.id[1])-1]).toString()].stats.numeric[defendingPosition];
+		attactingValueAtPosition = deck[CPUHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition];
+		if(defenderCard.firstChild.id[0] === "c"){
+			defendingValueAtPosition = deck[CPUHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+		}else{
+			defendingValueAtPosition = deck[playerHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+		}
+
+
 	}
 
 	if(attactingValueAtPosition > defendingValueAtPosition){
@@ -221,7 +235,8 @@ function drop(ev) {
 		card.removeAttribute("draggable")
 		card.removeAttribute("ondragstart")
 		ev.target.appendChild(document.getElementById(data));
-		ev.target.removeAttribute("style")
+		ev.target.removeAttribute("style");
+
 		gameLogic(ev.target);
 		if(avaliableIndeces.length && switchTurn()){
 			CPUTurn();
