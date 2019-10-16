@@ -15,8 +15,9 @@ Triple Triad is a two players game. Each player has 5 cards assigned randomly to
 * Each player has five cards.
 * The board size is a 3x3.
 * Each card has four stats (Top, Bottom, Right, and Left).
-* Player must place a card with higher side stats side against a defending card side.
-* Defeating an opponent's card will get reduces the opponent's score and increase yours.
+* Player must place a card with higher side stats against a defending card side.
+* Defeating an opponent's card will reduces the opponent's score and increase yours.
+* Defeating an opponent's card will result in it joining your team.
 * Player must achieve a score of 6 and higher to win the game.
 * Equal score will result in a TIE.
 
