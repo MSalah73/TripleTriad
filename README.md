@@ -4,49 +4,45 @@ An attempted to make a simplified version of the card game from final fantasy 8.
 
 ## Description
 
-Triple Triad is a dumbed down verison of a card game from the era of PlayStation 1. You can play and reminisce good/fun olden days of your childhood. 
-A description of your project. Explain what is the project about and what is the use for it.
+Triple Triad is a dumbed down verison of a card game from the era of PlayStation 1. You can play and reminisce the good olden days of your childhood. 
 
-## How to Play
-* Each card have 4 values. Each values dectate
-
-### Technical Used
+### Languages and frameworks Used
 ```
 HTML
 CSS
-JavaScript and DOM manipulation via JavaScript
+JavaScript
+DOM manipulation via JavaScript
 ```
 
 ### Wireframes
 
 Something similar to this:  
-![alt game design](https://i.ytimg.com/vi/FdxfpCZf3-8/hqdefault.jpg)
+![alt text](https://i.ytimg.com/vi/FdxfpCZf3-8/hqdefault.jpg)  
 
+Game's wireframe sketch can be accessed [here](https://wireframe.cc/rmK82e)
 ### User Stories
 
-* The user can play to reminisce themselves with Triple Triad from a final fantasy 8.
-* The user can place a card on their turn.
-* The user can place a card to attack CPU cards.
+The user can play to reminisce themselves with Triple Triad from a final fantasy 8.  
+The user can place a card on their turn.  
+The user can place a card to attack CPU cards.  
 
 ---
 
 ## Planning and Development Process
 
-* Build the visuals.
-* Build a drag and drop feature.
-* Fetch cards from API.
-* Build game mechanics.
-* Build a simple AI.
+Build the visuals.  
+Build a drag and drop feature.  
+Fetch cards from API.  
+Build game mechanics.  
+Build a simple AI.  
 
 ### Problem-Solving Strategy
 
-* console.log()
-* Debug using the browser debugger.
+Utilized console.log() and the browser debugger.
 
 ### Unsolved problems
-
-* Timing problem between each turn.
-* Fetch takes a long time to get the resources.
+ 
+Fetch takes a long time to get the resources.
 
 ---
 
@@ -56,11 +52,10 @@ Something similar to this:
 * You can add:
     * Plus Rule 
     * Combo Rule
-    * Adjust AI 
+    * Tweek AI 
 * Enjoy the game
 
 ---
 
  ## References
- * API page can be accessed [here]("https://triad.raelys.com/).
- * Google
+ API page can be accessed [here]("https://triad.raelys.com/).
