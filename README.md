@@ -19,7 +19,7 @@ JavaScript and DOM manipulation via JavaScript
 
 ### Wireframes
 
-Something similar to this:
+Something similar to this:  
 ![alt game design](https://i.ytimg.com/vi/FdxfpCZf3-8/hqdefault.jpg)
 
 ### User Stories
