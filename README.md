@@ -4,7 +4,21 @@ An attempted to make a simplified version of the card game from final fantasy 8.
 
 ## Description
 
-Triple Triad is a dumbed down verison of a card game from the era of PlayStation 1. You can play and reminisce the good olden days of your childhood. 
+Triple Triad is a dumbed down verison of a card game from the era of PlayStation 1. You can play and reminisce the good olden days of your childhood.  
+
+
+Triple Triad is a two players game. Each player has 5 cards assigned randomly to play on a 3 by 3 board. A player can defeat an opponent's cards by placing a higher stats side card adjacent to the defending card. Players with the highest points wins the game.
+
+## How to play
+
+* The first turn is determined with a rock-paper-scissor game.
+* Each player has five cards.
+* The board size is a 3x3.
+* Each card has four stats (Top, Bottom, Right, and Left).
+* Player must place a card with higher side stats side against a defending card side.
+* Defeating an opponent's card will get reduces the opponent's score and increase yours.
+* Player must achieve a score of 6 and higher to win the game.
+* Equal score will result in a TIE.
 
 ### Languages and frameworks Used
 ```

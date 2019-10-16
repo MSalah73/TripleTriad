@@ -176,19 +176,27 @@ function attckingLogic(placedCard, surroundingCardIndex, attackingPosition, defe
 
 	if(!turn){
 		attactingValueAtPosition = deck[playerHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition];
+
 		if(defenderCard.firstChild.id[0] === "c"){
 			defendingValueAtPosition = deck[CPUHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+			if(defenderCard.firstChild.currentSrc.endsWith("cardBack.jpg")){
+				defenderCard.firstChild.setAttribute("src", deck[CPUHand[Number(defenderCard.firstChild.id[1]) - 1]].image);
+			}
+
 		}else{
 			defendingValueAtPosition = deck[playerHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
 		}
 
 	}else{
 		attactingValueAtPosition = deck[CPUHand[Number(placedCard.firstChild.id[1])-1].toString()].stats.numeric[attackingPosition];
-		// defendingValueAtPosition = deck[playerHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+		if(placedCard.firstChild.currentSrc.endsWith("cardBack.jpg")){
+			placedCard.firstChild.setAttribute("src", deck[CPUHand[Number(placedCard.firstChild.id[1]) - 1]].image);
+		}
 		if(defenderCard.firstChild.id[0] === "c"){
 			defendingValueAtPosition = deck[CPUHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
 		}else{
 			defendingValueAtPosition = deck[playerHand[Number(defenderCard.firstChild.id[1])-1].toString()].stats.numeric[defendingPosition];
+
 		}
 	}
 
@@ -212,7 +220,6 @@ function CPUTurn(){
 function CPUCardTransfer(index){
 	let $card = $CPUAside.firstElementChild;
 	$CPUAside.firstChild.remove();
-	$card.setAttribute("src", deck[CPUHand[Number($card.id[1]) - 1]].image);
 	boardElements[index].appendChild($card);
 	boardElements[index].removeAttribute("style");
 	gameLogic(boardElements[index]);
