@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8"/>
+	<title>Triple Triad</title>
+</head>
+<body>
+	<div class="modal loading">
+  		<div class="modal-content message"><p>Loading cards...</p>
+  		</div>
+	</div>	
+	<div class="modal RPSGameDisplay">
+  		<div id="RPSGame" class="modal-content">
+  		</div>
+	</div>
+	<div class="modal resultDisplay">
+  		<div class="modal-content message"><p id="RPSResult"></p>
+  		</div>
+	</div>	
+	<header>
+		<div>Player cards</div>
+		<div class="scoreTurn">
+			<div id="score">Score: </div>
+			<div>|</div>
+			<div id="turn">Turn: </div>
+		</div>
+		<div>CPU cards</div>
+	</header>
+	<div class="bg">
+	<aside class="CPUCards">
+		<img id="c1" class="CPU" src="assets/cards/cardBack.jpg" alt="">
+		<img id="c2" class="CPU" src="assets/cards/cardBack.jpg" alt="">
+		<img id="c3" class="CPU" src="assets/cards/cardBack.jpg" alt="">
+		<img id="c4" class="CPU" src="assets/cards/cardBack.jpg" alt="">
+		<img id="c5" class="CPU" src="assets/cards/cardBack.jpg" alt="">
+	</aside>
+	<main class="board"></main>
+	<aside class="playerCards" >
+		<img id="p1" class="Player" draggable="true" ondragstart="drag(event)" src="assets/cards/cardBack.jpg" alt="">
+		<img id="p2" class="Player" draggable="true" ondragstart="drag(event)" src="assets/cards/cardBack.jpg" alt="">
+		<img id="p3" class="Player" draggable="true" ondragstart="drag(event)" src="assets/cards/cardBack.jpg" alt="">
+		<img id="p4" class="Player" draggable="true" ondragstart="drag(event)" src="assets/cards/cardBack.jpg" alt="">
+		<img id="p5" class="Player" draggable="true" ondragstart="drag(event)" src="assets/cards/cardBack.jpg" alt="">
+	</aside>
+	</div>
+	<script src="js/main.js" type="text/javascript"></script>
+	<audio src="assets/music/TertaMaster.mp3" loop autoplay ></audio>
+</body>
